@@ -2,11 +2,16 @@ package main
 
 import (
 	"fmt"
+	"os"
 	"runtime"
 	"time"
 )
 
 func main() {
+	dir, _ := os.UserHomeDir()
+	dir1, _ := os.UserCacheDir()
+	dir2, _ := os.UserConfigDir()
+	fmt.Printf("%v\n%v\n%v\n", dir, dir1, dir2)
 	fmt.Print("Go runs on ")
 	switch os := runtime.GOOS; os {
 	case "darwin":

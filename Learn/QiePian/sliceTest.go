@@ -15,6 +15,7 @@ func main() {
 	for i, i2 := range myArray {
 		println(i, i2)
 	}
+	
 	println("===")
 	for i := range myArray {
 		println(i, myArray[i])
