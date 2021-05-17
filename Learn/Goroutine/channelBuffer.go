@@ -43,7 +43,6 @@ func main() {
 	for i := range ch1 {
 		fmt.Print(i, " ")
 	}
-
 	// 3、channel是可以控制读写权限的
 	ch2 := make(chan int, 2) // 可读可写
 	ch2 <- 21
@@ -52,6 +51,7 @@ func main() {
 	ch3 := make(chan<- int, 2) // 只写
 	ch3 <- 31                  // ok
 	ch3 <- 32                  // ok
+
 
 	// x := <-ch3 // Invalid operation: <-ch3 (receive from the send-only type chan<- int)
 	fmt.Println("len=", len(ch3), cap(ch3))
