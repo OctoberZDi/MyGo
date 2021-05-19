@@ -1,0 +1,4 @@
+some
+I love china ,i love world
+直接用字符串写入：hello world,hello 222
+使用NewWriter写入文件
