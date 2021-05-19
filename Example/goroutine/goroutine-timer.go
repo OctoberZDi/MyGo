@@ -5,6 +5,7 @@ import (
 	"time"
 )
 
+// timer 用于在将来做一些事情
 func main() {
 	// Timer类型代表一个事件。
 	// 当计时器到期时，当前时间将在C上发送，

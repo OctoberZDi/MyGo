@@ -1,7 +1,11 @@
-package main
+package hello_world
 
 import "fmt"
 
-func main() {
-	fmt.Println("hello world,hello go!!")
+func SayHello(name string) {
+	fmt.Println("hello ", name)
+}
+
+func SayBye() {
+	fmt.Println("bye bye!")
 }
