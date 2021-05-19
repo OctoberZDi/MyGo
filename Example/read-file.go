@@ -18,7 +18,7 @@ func main() {
 	//读取文件的一部分。对于这些任务，请开始
 	//通过“打开”文件以获得“ os.File”值。
 	file, err2 := os.Open("defer.txt")
-	checkErr(err2)
+	checkErr(err2)  //测试
 
 	//从文件的开头读取一些字节。
 	//最多允许读取5个，但还要注意有多少个
