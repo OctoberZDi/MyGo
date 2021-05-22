@@ -8,7 +8,7 @@ import (
 
 func main() {
 	regexpStr := MustCompile("hello")
-	println(regexpStr)
+	fmt.Println(regexpStr)
 
 	defer fmt.Println("宕机后要做的事情1")
 	defer fmt.Println("宕机后要做的事情2")
