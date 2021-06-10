@@ -1,0 +1,8 @@
+### example-model-validator
+GET http://localhost:8005/bookable?check_in=2030-04-16&check_out=2030-04-17
+
+###
+GET http://localhost:8005/bookable?check_in=2030-03-10&check_out=2030-03-09
+
+###
+GET  http://localhost:8005/bookable?check_in=2000-03-09&check_out=2000-03-10

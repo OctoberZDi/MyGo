@@ -1,0 +1,96 @@
+
+### example-model-bind-from-json
+POST  http://localhost:8001/loginJson
+Content-Type: application/json
+
+{
+  "User": "zhangdi",
+  "Password": "123456"
+}
+
+### example-model-bind-from-xml
+POST  http://localhost:8002/loginXml
+Content-Type: application/xml
+
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <user>zhangdi</user>
+    <password>1234356</password>
+</root>
+
+
+### example-model-bind-from-yaml 未测试通过，只是写了一个demo
+POST  http://localhost:8003/loginYaml
+Content-Type: application/x-yaml
+
+User: zhangdi
+Password: 123456
+
+
+### example-model-bind-from-html modelid需要小写
+POST  http://localhost:8004/loginForm
+Content-Type: application/x-www-form-urlencoded
+
+user=zhangdi&password=123456
+
+
+### example-model-bind-query-string
+GET http://localhost:8006/testing?name=zhangdi&address=JiNan
+Content-Type: application/x-www-form-urlencoded
+
+name=ignore&address=ignore
+
+### example-model-bind-query-string
+GET http://localhost:8007/queryOrPost?name=appleboy&address=xyz&birthday=1992-03-15&createTime=1562400033000000123&unixTime=1562400033
+
+### example-model-bind-query-string
+POST http://localhost:8007/queryOrPost?name=appleboy&address=xyz
+
+### example-model-bind-query-string
+POST http://localhost:8007/queryOrPost
+Content-Type: application/x-www-form-urlencoded
+
+name=appleboy1&address=xyz11
+
+### example-model-bind-query-string
+POST http://localhost:8007/queryOrPost
+Content-Type: application/json
+
+{
+  "name": "zhangdi",
+  "address": "JN"
+}
+
+
+### example-model-bind-uri
+### 请求Ok
+GET  http://localhost:8008/thinkerou/987fbc97-4bed-5078-9f07-9141ba07c9f3
+
+### example-model-bind-uri
+### 下面的请求会报错："Key: 'URI.ID' Error:Field validation for 'ID' failed on the 'uuid' tag"
+GET  http://localhost:8008/zhangdi/11
+
+### example-model-bind-header 使用request client添加header方式
+GET http://localhost:8009/
+Rate:300
+Domain:music
+
+### example-model-bind-header 使用request client添加header方式
+GET http://localhost:8010/bindCheckbox
+
+### example-xml-json-yaml-protobuf-rendering
+GET http://localhost:8011/someJson
+
+###
+GET http://localhost:8011/moreJson
+
+###
+GET http://localhost:8011/someXml
+
+###
+GET http://localhost:8011/someYaml
+
+###
+GET http://localhost:8011/someProtoBuf
+
+

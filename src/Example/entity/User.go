@@ -11,3 +11,7 @@ type User struct {
 func GetUserInfo(user User) {
 	fmt.Printf("Name=%v,Age=%d,Score=%d", user.Name, user.Age, user.Score)
 }
+
+func getName(user User) string {
+	return user.Name
+}

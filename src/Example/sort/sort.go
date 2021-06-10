@@ -6,7 +6,6 @@ import (
 )
 
 func main() {
-
 	// 字符串排序
 	strs := []string{"b", "a", "d", "c", "e", "f"}
 	fmt.Println("Unsorted strings:", strs)
@@ -26,5 +25,4 @@ func main() {
 	//
 	issorted := sort.IntsAreSorted(ints)
 	fmt.Println("Sorted:", issorted)
-
 }

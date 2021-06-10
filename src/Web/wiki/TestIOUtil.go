@@ -2,12 +2,19 @@ package main
 
 import (
 	"fmt"
+	"github.com/gin-gonic/gin"
 	"io/ioutil"
 )
 
 func main() {
 
-	ioutil.WriteFile("test.txt", []byte("你好，世界！"), 0666)
+	//测试code
+	r := gin.Default()
+	println(r)
+	err := ioutil.WriteFile("test.txt", []byte("你好，世界！"), 0666)
+	if err != nil {
+		return
+	}
 
 	fileContent, err := ioutil.ReadFile("test.txt")
 	if err != nil {

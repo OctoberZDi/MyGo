@@ -1,0 +1,5 @@
+### example-custom-http-configuration
+GET http://localhost:8001/server01
+
+###
+GET http://localhost:8002/server02

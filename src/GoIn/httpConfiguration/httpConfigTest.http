@@ -1,0 +1,4 @@
+### example-custom-http-configuration
+GET http://localhost:8011/customConfig
+###
+GET http://localhost:8011/customConfig2

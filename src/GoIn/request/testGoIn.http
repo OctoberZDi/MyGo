@@ -1,0 +1,67 @@
+### example-query-paramters
+GET http://localhost:3333/ping?name=zhangdi&password=123456&other1=
+
+
+
+
+### example-parameters-in-path
+GET http://localhost:3333/user/zhangdi/send
+
+## zhangdi is /
+
+### example-parameters-in-path
+GET http://localhost:3333/user/groups/
+
+### example-multipart-form
+POST  http://localhost:5555/form_post
+Content-Type: application/x-www-form-urlencoded
+
+message=888&nick=444
+
+
+### example-query-and-post-form
+POST  http://localhost:6666/form-post?id=1234&page=1
+Content-Type: application/x-www-form-urlencoded
+
+name=manu&message=this_is_great
+
+###  example-querystring-parameters
+GET http://localhost:8080/welcome?firstName=zhang&lastName=di
+
+### example-map-as-query-or-postform-params
+POST http://localhost:7777/form-post?ids[a]=11111&ids[b]=2222
+Content-Type: application/x-www-form-urlencoded
+
+names[1]=zhangdi&names[2]=zhangxiaoman
+
+### example-grouping-routes from
+POST http://localhost:8877/v1/login
+
+###
+POST http://localhost:8877/v1/logout
+
+###
+POST http://localhost:8877/v1/submit
+
+###
+POST http://localhost:8877/v2/read
+
+###
+POST http://localhost:8877/v2/write
+
+### example-grouping-routes end
+
+###
+GET http://localhost:8080/test
+
+###
+GET http://localhost:8080/test2
+
+### example-bind-formdata-request-with-custom-struct
+GET http://localhost:8003/getB?field_a=hello&field_b=world
+
+###
+GET http://localhost:8003/getC?field_a=hello&field_c=world
+
+###
+GET http://localhost:8003/getD?field_x=hello&field_d=world

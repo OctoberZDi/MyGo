@@ -25,6 +25,7 @@ func main() {
 
 	// http.ListenAndServer 监听TCP地址，并且会使用handler参数调用server函数处理接收到的链接。
 	// handler参数一般会设置为nil，此时会使用DefaultServerMux
+	// 请求地址：http://localhost:8080/view/test
 	log.Fatal(http.ListenAndServe(":8080", nil))
 }
 
@@ -98,7 +99,9 @@ func saveHandler(w http.ResponseWriter, r *http.Request, title string) {
 	http.Redirect(w, r, "/view/"+title, http.StatusFound)
 }
 
-var templates = template.Must(template.ParseFiles("./web/wiki/edit.html", "./web/wiki/view.html"))
+var templates = template.Must(template.ParseFiles("./src/Web/wiki/edit.html", "./src/Web/wiki/view.html"))
+
+//var templates = template.Must(template.ParseFiles("./web/wiki/edit.html", "./web/wiki/view.html"))
 
 func renderTemplate(w http.ResponseWriter, tmpl string, p *Page) {
 	// tmpl模板文件名，后面需要添加.html

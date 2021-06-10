@@ -1,0 +1,38 @@
+
+### example-upload-single-file 单文件上传
+POST http://localhost:7777/singleUpload
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary\
+Content-Disposition: form-data; name="formType"
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="aa.txt"
+Content-Type: application/x-zip-compressed
+
+< D:\logs\aa.txt
+--WebAppBoundary--
+
+### example-upload-multiple-file 多文件上传
+POST http://localhost:8888/multiUpload
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary\
+Content-Disposition: form-data; name="formType"
+
+--WebAppBoundary
+Content-Disposition: form-data; name="files"; filename="aa.txt"
+Content-Type: application/x-zip-compressed
+
+< D:\logs\aa.txt
+--WebAppBoundary--
+
+--WebAppBoundary\
+Content-Disposition: form-data; name="formType"
+
+--WebAppBoundary
+Content-Disposition: form-data; name="files"; filename="aa1.txt"
+Content-Type: application/x-zip-compressed
+
+< D:\logs\aa1.txt
+--WebAppBoundary--

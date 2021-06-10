@@ -1,0 +1,24 @@
+### example-serving-static-files
+GET http://localhost:8013/
+
+### example-serving-data-from-file
+GET http://localhost:8013/local/file
+
+### example-serving-data-from-reader
+GET http://localhost:8013/someDataFromRender
+
+### example-html-render
+GET http://localhost:8013/posts/index
+
+###
+GET http://localhost:8013/users/index
+
+### example-custom-templat-render
+GET http://localhost:8013/customIndex1
+
+### example-custom-templat-render
+GET http://localhost:8013/customIndex2
+
+### example-custom-template-functions
+GET http://localhost:8013/customFunc
+

@@ -1,0 +1,5 @@
+### example-redirects
+GET http://localhost:8080/redirectBaidu
+
+###
+GET http://localhost:8080/redirectNginx

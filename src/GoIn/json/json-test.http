@@ -1,0 +1,15 @@
+
+### example-securejson
+GET http://localhost:8012/secureJson
+
+### example-jsonp
+GET  http://localhost:8012/JSONP?callback=x
+
+### example-asciijson
+GET  http://localhost:8012/asciiJson
+
+### example-purejson
+GET http://localhost:8012/json
+
+###
+GET http://localhost:8012/pureJson

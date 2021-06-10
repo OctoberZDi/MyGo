@@ -1,0 +1,27 @@
+
+### example-write-log-file
+GET http://localhost:8010/ping
+
+### example-custom-recovery-behavior
+GET http://localhost:8010/panic
+
+### example-log-contolling-log-output-coloring
+GET http://localhost:8010/ping
+
+### example-log-custom-log-format
+GET http://localhost:8010/ping
+
+### example-custom-middleware
+GET http://localhost:8010/test
+
+### example-using-basicauth-middleware
+GET http://localhost:8010/admin/secrets
+
+###
+GET http://localhost:8010/admin/test
+
+### example-goroutines-inside-a-middleware
+GET  http://localhost:8010/longSync
+
+###
+GET  http://localhost:8010/longAsync
